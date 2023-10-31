@@ -1,0 +1,1645 @@
+
+<!doctype html>
+<html lang="en" class="semi-dark">
+
+
+<!-- Mirrored from codervent.com/amdash/demo/vertical/component-alerts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Dec 2022 02:54:00 GMT -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+    <!--plugins-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+    <!-- loader-->
+    <link href="assets/css/pace.min.css" rel="stylesheet" />
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <!-- Theme Style CSS -->
+    <link rel="stylesheet" href="assets/css/dark-theme.css" />
+    <link rel="stylesheet" href="assets/css/semi-dark.css" />
+    <link rel="stylesheet" href="assets/css/header-colors.css" />
+    <!-- Font osm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Amdash - Bootstrap 5 Admin Dashboard Template</title>
+    <style>
+        .dropdown {
+            margin-left: 100px;
+            padding-top: 0px;
+        }
+
+        .block {
+            margin-left: 180px;
+        }
+
+        .items {
+            margin-left: 200px;
+            padding-top: 0px;
+        }
+
+        .item {
+            margin-right: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <!--wrapper-->
+    <div class="wrapper">
+        <!--sidebar wrapper -->
+        <div class="sidebar-wrapper" data-simplebar="true">
+            <div class="sidebar-header">
+                <div>
+                    <img src="./assets/images/EHS_logo.png" alt="" class="m-2 img-fluid text-center">
+                </div>
+                <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+				</div>
+
+            </div>
+            <!--navigation-->
+
+            <ul class="metismenu" id="menu">
+				<li>
+					<a href="index.html" class="">
+						<div class="parent-icon">
+							<i class='bx bx-home-circle'></i>
+						</div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+					<ul>
+
+					</ul>
+				</li>
+
+				<!-- DOCTOR -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon">
+							<i class="fa-solid fa-user-doctor"></i>
+						</div>
+						<div class="menu-title">Doctors</div>
+					</a>
+					<ul>
+						<li> <a href="All_Doctors.html"><i class="bx bx-right-arrow-alt"></i> All Doctors </a>
+						</li>
+						<li> <a href="Doctor_Registration.html"><i class="bx bx-right-arrow-alt"></i> Doctor
+								Registration </a>
+						</li>
+						<li> <a href="Add_Doctor.html"><i class="bx bx-right-arrow-alt"></i> Add Doctor </a>
+						</li>
+					    
+						<li> <a href="DoctorProfile.html"><i class="bx bx-right-arrow-alt"></i> Doctor Profile </a>
+						</li>
+
+					</ul>
+				</li>
+
+				<!-- Patient -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="fa-solid fa-hospital-user"></i>
+						</div>
+						<div class="menu-title"> Patient </div>
+					</a>
+					<ul>
+						<li> <a href="Patients-contact-list.html"><i class="bx bx-right-arrow-alt"></i>
+								All Patients
+							</a>
+						</li>
+						<li> <a href="Registration.html"><i class="bx bx-right-arrow-alt"></i>
+								Patients Registration
+							</a>
+						</li>
+						<li> <a href="user-profile.html"><i class="bx bx-right-arrow-alt"></i>
+								Patients Profile
+							</a>
+						</li>
+						<li> <a href="Add-Appointment.html"><i class="bx bx-right-arrow-alt"></i>
+								Add Appointment
+							</a>
+						</li>
+
+						
+						<li> <a href="TriageInfo.html"><i class="bx bx-right-arrow-alt"></i>
+								Patients Triage Details
+							</a>
+						</li>
+						<li> <a href="Discharge.html"><i class="bx bx-right-arrow-alt"></i>
+								Discharge Patients
+							</a>
+						</li>
+						<li> <a href="Payments.html"><i class="bx bx-right-arrow-alt"></i>
+								Payment
+							</a>
+						</li>
+
+					</ul>
+				</li>
+
+
+				<!-- Schedule  -->
+
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-calendar-days"></i>
+						</div>
+						<div class="menu-title">Schedule </div>
+					</a>
+					<ul>
+						<li> <a href="AllSchedule.html"><i class="bx bx-right-arrow-alt"></i> All Schedule </a>
+						</li>
+						<li> <a href="Holidays.html"><i class="bx bx-right-arrow-alt"></i> Holidays </a>
+						</li>
+
+					</ul>
+				</li>
+
+				<!-- Appointment  -->
+
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-calendar-check"></i>
+						</div>
+						<div class="menu-title">Appointment </div>
+					</a>
+					<ul>
+						<li> <a href="All-Appointment.html"><i class="bx bx-right-arrow-alt"></i> All Appointment </a>
+						</li>
+						<li> <a href="add_new_payment.html"><i class="bx bx-right-arrow-alt"></i> Add Appointment
+							</a>
+						</li>
+						<li> <a href="Todays.html"><i class="bx bx-right-arrow-alt"></i> Todays</a>
+						</li>
+						<li> <a href="Upcoimg.html"><i class="bx bx-right-arrow-alt"></i> Upcoming</a>
+						</li>
+						<li> <a href="Calender.html"><i class="bx bx-right-arrow-alt"></i> Calender </a>
+						</li>
+						<li> <a href="Request.html"><i class="bx bx-right-arrow-alt"></i> Request </a>
+						</li>
+
+					</ul>
+				</li>
+
+				<!-- Human Resoures -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"> <i class="fa-brands fa-osi"></i>
+						</div>
+						<div class="menu-title"> Human Resoures </div>
+					</a>
+					<ul>
+						<li> <a href="NurseHuman.html"><i class="bx bx-right-arrow-alt"></i>Nurse </a>
+						</li>
+						<li> <a href="Pharmastichuman.html"><i class="bx bx-right-arrow-alt"></i> Pharmacist </a>
+						</li>
+						<li> <a href="AccountantHuman.html"><i class="bx bx-right-arrow-alt"></i> Accountant </a>
+						</li>
+						<li> <a href="LaboratoristHuman.html"><i class="bx bx-right-arrow-alt"></i> Laboratorist </a>
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- Contact -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="fa-regular fa-address-book"></i>
+						</div>
+						<div class="menu-title">Contact </div>
+					</a>
+					<ul>
+						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						</li>
+						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						</li>
+
+						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
+						</li>
+
+						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
+						</li>
+					</ul>
+				</li>
+
+				<!-- CRM  -->
+				<!-- <li>
+					<a class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
+						</div>
+						<div class="menu-title">CRM </div>
+					</a>
+					<ul>
+						<li> <a href=""><i class="bx bx-right-arrow-alt"></i> Overview </a>
+						</li>
+					     <li>
+							<a class="has-arrow">
+								<div class="parent-icon"> <i class='bx bx-bookmark-heart'></i>
+								</div>
+								<div class="menu-title"> Report </div>
+							</a>
+							<ul>
+								<li> <a href=""><i class="bx bx-right-arrow-alt"></i> Lead </a>
+								</li>
+								<li> <a href=""><i class="bx bx-right-arrow-alt"></i> Lead </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li> -->
+
+				<!-- CRM -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="fa-brands fa-delicious"></i>
+						</div>
+						<div class="menu-title">CRM</div>
+					</a>
+					<ul>
+						<li> <a href="CRM_overview.html"><i class="bx bx-right-arrow-alt"></i>Overview</a>
+						</li>
+					     <li>  <a href="javascript:;" class="has-arrow">
+								<i class="bx bx-right-arrow-alt"></i>
+								<div class="menu-title ">Report</div>
+							</a>
+							<ul>
+                                   <li>
+								<a href="CRM_Report_lead.html"><i class="bx bx-right-arrow-alt"></i>Lead</a>
+							</li>
+							<li>
+								<a href="CRM_Report_deal.html"><i class="bx bx-right-arrow-alt"></i>Deal</a>
+							</li>
+							</ul>
+							
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- CRM System  -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-brands fa-centos"></i>
+						</div>
+						<div class="menu-title">CRM System </div>
+					</a>
+					<ul>
+						<li> <a href="Lead.html"><i class="bx bx-right-arrow-alt"></i> Lead </a>
+						</li>
+						<li> <a href="Crmdeals.html"><i class="bx bx-right-arrow-alt"></i> Deals </a>
+						</li>
+						<li> <a href="CRM_Builder.html"><i class="bx bx-right-arrow-alt"></i> Form Builder </a>
+						</li>
+						<li> <a href="CRM_contract.html"><i class="bx bx-right-arrow-alt"></i> Contract </a>
+						</li>
+						<li> <a href="CRMsetup.html"><i class="bx bx-right-arrow-alt"></i> CRM System Setup </a>
+						</li>
+						<!-- <li> <a href="Barcode.html"><i class="bx bx-right-arrow-alt"></i> Barcode </a>
+						</li> -->
+						<!-- <li> <a href="Add_product.html"><i class="bx bx-right-arrow-alt"></i> Product </a>
+						</li> -->
+					</ul>
+				</li>
+
+				 <!-- <li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
+						</div>
+						<div class="menu-title">POS System </div>
+					</a>
+					<ul>
+						<li> <a href="Barcode.html"><i class="bx bx-right-arrow-alt"></i> Barcode </a>
+						</li>
+						<li> <a href="Add_product.html"><i class="bx bx-right-arrow-alt"></i> Add Product </a>
+						</li>
+						<li> <a href="Add_product.html"><i class="bx bx-right-arrow-alt"></i> POS Sty </a>
+						</li>
+
+					</ul>
+
+
+				</li> --> 
+
+				<!-- Lab tests -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-flask"></i>
+						</div>
+						<div class="menu-title"> Lab tests </div>
+					</a>
+					<ul>
+						<li> <a href="labTest.html"><i class="bx bx-right-arrow-alt"></i> Lab Tests </a>
+						</li>
+						<li> <a href="LabReports.html"><i class="bx bx-right-arrow-alt"></i> Lab Report </a>
+						</li>
+						<li> <a href="Lab-reportdelivery.html"><i class="bx bx-right-arrow-alt"></i>Report Delivery
+							</a>
+						</li>
+						<li> <a href="lab-template.html"><i class="bx bx-right-arrow-alt"></i>Template
+							</a>
+						</li>
+						<li> <a href="LabMacro.html"><i class="bx bx-right-arrow-alt"></i>Macro
+							</a>
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- Bed  -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon">
+							<i class="fa-solid fa-bed"></i>
+
+						</div>
+						<div class="menu-title">Bed </div>
+					</a>
+					<ul>
+						<li> <a href="Bed_all_addmission.html"><i class="bx bx-right-arrow-alt"></i>All Beds </a>
+						</li>
+						<li> <a href="bed_new_Addmission.html"><i class="bx bx-right-arrow-alt"></i> Add Admission </a>
+						</li>
+						<li> <a href="bed-list.html"><i class="bx bx-right-arrow-alt"></i> Bed list </a>
+						</li>
+						<li> <a href="new-bed.html"><i class="bx bx-right-arrow-alt"></i> Add bed </a>
+						</li>
+						<li> <a href="bed-category.html"><i class="bx bx-right-arrow-alt"></i> Bed Category </a>
+						</li>
+					</ul>
+				</li>
+
+
+
+
+				<!-- Medicine -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"> <i class="fa-solid fa-pills"></i>
+						</div>
+						<div class="menu-title"> Medicine </div>
+					</a>
+					<ul>
+						<li> <a href="MedicineList.html"><i class="bx bx-right-arrow-alt"></i> Medicine List </a>
+						</li>
+						<li> <a href="AddMedicine.html"><i class="bx bx-right-arrow-alt"></i> Add Medicine </a>
+						</li>
+						<li> <a href="MedicineCategory.html"><i class="bx bx-right-arrow-alt"></i>Medicine Category </a>
+						</li>
+						<li> <a href="Addcategory.html"><i class="bx bx-right-arrow-alt"></i>Add Category </a>
+						</li>
+						<li> <a href="MedicineAlertStocklist.html"><i class="bx bx-right-arrow-alt"></i>Medicine Stock
+								Alert </a>
+						</li>
+					</ul>
+				</li>
+
+
+
+
+				<li class="menu-label">Pages</li>
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-regular fa-file"></i>
+						</div>
+						<div class="menu-title">Authentication</div>
+					</a>
+					<ul>
+						<li> <a href="authentication-signin.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign In</a>
+						</li>
+						<li> <a href="authentication-signup.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign Up</a>
+						</li>
+						<li> <a href="authentication-signin-with-header-footer.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign In with Header & Footer</a>
+						</li>
+						<li> <a href="authentication-signup-with-header-footer.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign Up with Header & Footer</a>
+						</li>
+						<li> <a href="authentication-forgot-password.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Forgot Password</a>
+						</li>
+						<li> <a href="authentication-reset-password.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Reset Password</a>
+						</li>
+						<li> <a href="authentication-lock-screen.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Lock Screen</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="user-profile.html">
+						<div class="parent-icon"><i class="fa-regular fa-user"></i>
+						</div>
+						<div class="menu-title">User Profile</div>
+					</a>
+				</li>
+
+			
+				<!-- <li>
+					<a href="faq.html">
+						<div class="parent-icon"><i class="bx bx-help-circle"></i>
+						</div>
+						<div class="menu-title">FAQ</div>
+					</a>
+				</li> -->
+				<!-- <li>
+					<a href="pricing-table.html">
+						<div class="parent-icon"><i class="bx bx-diamond"></i>
+						</div>
+						<div class="menu-title">Pricing</div>
+					</a>
+				</li> -->
+
+				<!-- <li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="bx bx-map-alt"></i>
+						</div>
+						<div class="menu-title">Maps</div>
+					</a>
+					<ul>
+						<li> <a href="map-google-maps.html"><i class="bx bx-right-arrow-alt"></i>Google Maps</a>
+						</li>
+						<li> <a href="map-vector-maps.html"><i class="bx bx-right-arrow-alt"></i>Vector Maps</a>
+						</li>
+					</ul>
+				</li> -->
+				<li class="menu-label">Others</li>
+				
+                
+				<li>
+					<a href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-book"></i>
+						</div>
+						<div class="menu-title">Documentation</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://themeforest.net/user/codervent" target="_blank">
+						<div class="parent-icon"><i class="fa-solid fa-circle-info"></i>
+						</div>
+						<div class="menu-title">Support</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="Setting.html">
+						<div class="parent-icon"><i class="fa-solid fa-gear"></i>
+						</div>
+						<div class="menu-title">Setting</div>
+					</a>
+				</li>
+			</ul>
+            <!--end navigation-->
+        </div>
+        <!--end sidebar wrapper -->
+        <!--start header -->
+        <header>
+            <div class="topbar d-flex align-items-center">
+                <nav class="navbar navbar-expand">
+                    <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                    </div>
+                    <div class="search-bar flex-grow-1">
+                        <div class="position-relative search-bar-box">
+                            <input type="text" class="form-control search-control" placeholder="Type to search...">
+                            <span class="position-absolute top-50 search-show translate-middle-y"><i
+                                    class='bx bx-search'></i></span>
+                            <span class="position-absolute top-50 search-close translate-middle-y"><i
+                                    class='bx bx-x'></i></span>
+                        </div>
+                    </div>
+                    <div class="top-menu ms-auto">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item mobile-search-icon">
+                                <a class="nav-link" href="#"> <i class='bx bx-search'></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-large">
+                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <div class="row row-cols-3 g-3 p-3">
+                                        <div class="col text-center">
+                                            <div class="app-box mx-auto bg-gradient-cosmic text-white"><i
+                                                    class='bx bx-group'></i>
+                                            </div>
+                                            <div class="app-title">Teams</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <div class="app-box mx-auto bg-gradient-burning text-white"><i
+                                                    class='bx bx-atom'></i>
+                                            </div>
+                                            <div class="app-title">Projects</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <div class="app-box mx-auto bg-gradient-lush text-white"><i
+                                                    class='bx bx-shield'></i>
+                                            </div>
+                                            <div class="app-title">Tasks</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <div class="app-box mx-auto bg-gradient-kyoto text-dark"><i
+                                                    class='bx bx-notification'></i>
+                                            </div>
+                                            <div class="app-title">Feeds</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <div class="app-box mx-auto bg-gradient-blues text-dark"><i
+                                                    class='bx bx-file'></i>
+                                            </div>
+                                            <div class="app-title">Files</div>
+                                        </div>
+                                        <div class="col text-center">
+                                            <div class="app-box mx-auto bg-gradient-moonlit text-white"><i
+                                                    class='bx bx-filter-alt'></i>
+                                            </div>
+                                            <div class="app-title">Alerts</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-large">
+                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span
+                                        class="alert-count">7</span>
+                                    <i class='bx bx-bell'></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="javascript:;">
+                                        <div class="msg-header">
+                                            <p class="msg-header-title">Notifications</p>
+                                            <p class="msg-header-clear ms-auto">Marks all as read</p>
+                                        </div>
+                                    </a>
+                                    <div class="header-notifications-list">
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-primary text-primary"><i
+                                                        class="bx bx-group"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">New Customers<span
+                                                            class="msg-time float-end">14 Sec
+                                                            ago</span></h6>
+                                                    <p class="msg-info">5 new user registered</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-danger text-danger"><i
+                                                        class="bx bx-cart-alt"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">New Orders <span class="msg-time float-end">2
+                                                            min
+                                                            ago</span></h6>
+                                                    <p class="msg-info">You have recived new orders</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-success text-success"><i
+                                                        class="bx bx-file"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">24 PDF File<span class="msg-time float-end">19
+                                                            min
+                                                            ago</span></h6>
+                                                    <p class="msg-info">The pdf files generated</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-warning text-warning"><i
+                                                        class="bx bx-send"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Time Response <span
+                                                            class="msg-time float-end">28 min
+                                                            ago</span></h6>
+                                                    <p class="msg-info">5.1 min avarage time response</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-info text-info"><i
+                                                        class="bx bx-home-circle"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">New Product Approved <span
+                                                            class="msg-time float-end">2 hrs ago</span></h6>
+                                                    <p class="msg-info">Your new product has approved</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-danger text-danger"><i
+                                                        class="bx bx-message-detail"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">New Comments <span class="msg-time float-end">4
+                                                            hrs
+                                                            ago</span></h6>
+                                                    <p class="msg-info">New customer comments recived</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-success text-success"><i
+                                                        class='bx bx-check-square'></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Your item is shipped <span
+                                                            class="msg-time float-end">5 hrs
+                                                            ago</span></h6>
+                                                    <p class="msg-info">Successfully shipped your item</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-primary text-primary"><i
+                                                        class='bx bx-user-pin'></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">New 24 authors<span
+                                                            class="msg-time float-end">1 day
+                                                            ago</span></h6>
+                                                    <p class="msg-info">24 new authors joined last week</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="notify bg-light-warning text-warning"><i
+                                                        class='bx bx-door-open'></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Defense Alerts <span
+                                                            class="msg-time float-end">2 weeks
+                                                            ago</span></h6>
+                                                    <p class="msg-info">45% less alerts last 4 weeks</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:;">
+                                        <div class="text-center msg-footer">View All Notifications</div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-large">
+                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span
+                                        class="alert-count">8</span>
+                                    <i class='bx bx-comment'></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="javascript:;">
+                                        <div class="msg-header">
+                                            <p class="msg-header-title">Messages</p>
+                                            <p class="msg-header-clear ms-auto">Marks all as read</p>
+                                        </div>
+                                    </a>
+                                    <div class="header-message-list">
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-1.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Daisy Anderson <span
+                                                            class="msg-time float-end">5 sec
+                                                            ago</span></h6>
+                                                    <p class="msg-info">The standard chunk of lorem</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-2.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Althea Cabardo <span
+                                                            class="msg-time float-end">14
+                                                            sec ago</span></h6>
+                                                    <p class="msg-info">Many desktop publishing packages</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-3.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Oscar Garner <span class="msg-time float-end">8
+                                                            min
+                                                            ago</span></h6>
+                                                    <p class="msg-info">Various versions have evolved over</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-4.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Katherine Pechon <span
+                                                            class="msg-time float-end">15
+                                                            min ago</span></h6>
+                                                    <p class="msg-info">Making this the first true generator</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-5.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Amelia Doe <span class="msg-time float-end">22
+                                                            min
+                                                            ago</span></h6>
+                                                    <p class="msg-info">Duis aute irure dolor in reprehenderit</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-6.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Cristina Jhons <span
+                                                            class="msg-time float-end">2 hrs
+                                                            ago</span></h6>
+                                                    <p class="msg-info">The passage is attributed to an unknown</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-7.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">James Caviness <span
+                                                            class="msg-time float-end">4 hrs
+                                                            ago</span></h6>
+                                                    <p class="msg-info">The point of using Lorem</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-8.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Peter Costanzo <span
+                                                            class="msg-time float-end">6 hrs
+                                                            ago</span></h6>
+                                                    <p class="msg-info">It was popularised in the 1960s</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-9.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">David Buckley <span
+                                                            class="msg-time float-end">2 hrs
+                                                            ago</span></h6>
+                                                    <p class="msg-info">Various versions have evolved over</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-10.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Thomas Wheeler <span
+                                                            class="msg-time float-end">2 days
+                                                            ago</span></h6>
+                                                    <p class="msg-info">If you are going to use a passage</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="dropdown-item" href="javascript:;">
+                                            <div class="d-flex align-items-center">
+                                                <div class="user-online">
+                                                    <img src="assets/images/avatars/avatar-11.png" class="msg-avatar"
+                                                        alt="user avatar">
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="msg-name">Johnny Seitz <span class="msg-time float-end">5
+                                                            days
+                                                            ago</span></h6>
+                                                    <p class="msg-info">All the Lorem Ipsum generators</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="javascript:;">
+                                        <div class="text-center msg-footer">View All Messages</div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-box dropdown">
+                        <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                            <div class="user-info ps-3">
+                                <p class="user-name mb-0">Pauline Seitz</p>
+                                <p class="designattion mb-0">Admin</p>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-user"></i><span>Profile</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-cog"></i><span>Settings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-home-circle'></i><span>Dashboard</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-dollar-circle'></i><span>Earnings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-download'></i><span>Downloads</span></a>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider mb-0"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--end header -->
+        <!--start page wrapper -->
+
+        <div class="page-wrapper">
+            <div class="page-content">
+                <!--breadcrumb-->
+                <div class="page-breadcrumb d-none d-sm-flex align-items-center ">
+                    <div class="breadcrumb-title pe-3"> Component</div>
+                    <div class="ps-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0 p-0">
+                                <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">Setting</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="ms-auto">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Settings</button>
+                            <button type="button"
+                                class="btn btn-primary split-bg-primary dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown"> <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-end"> <a
+                                    class="dropdown-item" href="javascript:;">Action</a>
+                                <a class="dropdown-item" href="javascript:;">Another action</a>
+                                <a class="dropdown-item" href="javascript:;">Something else here</a>
+                                <div class="dropdown-divider"></div> <a class="dropdown-item"
+                                    href="javascript:;">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="page-wrapper">
+            <div class="page-content">
+                <!-- bg-gradient-blues -->
+                <div class="mb-0">
+                    <div class="row ">
+                        <div class="col-lg-12 ">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h4>Setting</h4>
+                                </div>
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary"
+                                        style="height:38px; width:40px; background-color:green; text-align: center;"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="border-radius: 20px;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Create Setting</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label class="mb-2" for="exampleInputEmail1">Name</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                                        aria-describedby="emailHelp" placeholder="Enter Setting">
+                                                </div>
+                                        </div>
+                                        <div class="modal-footer mt-3">
+                                            <button type="button" class="rounded-pill border-0" data-bs-dismiss="modal"
+                                                style="height:38px; width:80px; background-color:green; color: white; ">Close</button>
+                                            <button type="button" class="border-0 rounded-pill "
+                                                style="height:38px; width:80px; background-color:green; color: white;">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-3 ">
+                            <div class="card mt-3 border-0">
+                                <div class="card-body ">
+                                    <div class="align-items-start">
+                                        <div class="nav flex-column nav-pills me-0" id="v-pills-tab" role="tablist"
+                                            aria-orientation="vertical">
+                                            <button class="nav-link active" id="v-pills-Pipeline-tab"
+                                                data-bs-toggle="pill" data-bs-target="#v-pills-Pipeline" type="button"
+                                                role="tab" aria-controls="v-pills-Pipeline"
+                                                aria-selected="true">Email Setting</button>
+                                            <button class="nav-link" id="v-pills-LeadStages-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-LeadStages" type="button" role="tab"
+                                                aria-controls="v-pills-LeadStages" aria-selected="false">System Setting
+                                        </button>
+                                            <button class="nav-link" id="v-pills-DealStages-tab" data-bs-toggle="pill"
+                                                data-bs-target="#v-pills-DealStages" type="button" role="tab"
+                                                aria-controls="v-pills-DealStages" aria-selected="false">   
+                                                </button>
+                                           
+                                                
+                                           
+                                                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="tab-content align-items-center mt-3" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-Pipeline" role="tabpanel"
+                                    aria-labelledby="v-pills-Pipeline-tab">
+                                    <div class="row ">
+                                        <div class="shadow p-3 bg-body rounded">
+                                                                                       
+                                        
+                                            <div id="email-settings" class="card">
+                                                <div class="card-header">
+                                                    <h5>Email Settings</h5>
+                                                </div>
+                                                <form method="POST" action="https://demo.rajodiya.com/erpgo-saas/company-email-settings"
+                                                    accept-charset="UTF-8"><input name="_token" type="hidden"
+                                                        value="eixtowaeVhBFdLy8lCzC44AL071VmjFbvdMvDf8M">
+                                                    <div class="card-body">
+                                                        <input type="hidden" name="_token"
+                                                            value="eixtowaeVhBFdLy8lCzC44AL071VmjFbvdMvDf8M">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_driver" class="form-label">Mail Driver</label>
+                                                                    <input class="form-control" placeholder="Enter Mail Driver"
+                                                                        name="mail_driver" type="text" value="smtp" id="mail_driver">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_host" class="form-label">Mail Host</label>
+                                                                    <input class="form-control " placeholder="Enter Mail Host"
+                                                                        name="mail_host" type="text" value="mail.rajodiya.com"
+                                                                        id="mail_host">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_port" class="form-label">Mail Port</label>
+                                                                    <input class="form-control" placeholder="Enter Mail Port"
+                                                                        name="mail_port" type="text" value="465" id="mail_port">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_username" class="form-label">Mail Username</label>
+                                                                    <input class="form-control" placeholder="Enter Mail Username"
+                                                                        name="mail_username" type="text" value="test@rajodiya.com"
+                                                                        id="mail_username">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_password" class="form-label">Mail Password</label>
+                                                                    <input class="form-control" placeholder="Enter Mail Password"
+                                                                        name="mail_password" type="text" value="test123"
+                                                                        id="mail_password">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_encryption" class="form-label">Mail
+                                                                        Encryption</label>
+                                                                    <input class="form-control" placeholder="Enter Mail Encryption"
+                                                                        name="mail_encryption" type="text" value="ssl"
+                                                                        id="mail_encryption">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_from_address" class="form-label">Mail From
+                                                                        Address</label>
+                                                                    <input class="form-control" placeholder="Enter Mail From Address"
+                                                                        name="mail_from_address" type="text" value="test@rajodiya.com"
+                                                                        id="mail_from_address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+                                                                    <label for="mail_from_name" class="form-label">Mail From
+                                                                        Name</label>
+                                                                    <input class="form-control" placeholder="Enter Mail From Name"
+                                                                        name="mail_from_name" type="text" value="Test"
+                                                                        id="mail_from_name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="card-footer d-flex justify-content-end">
+                                                            <div class="form-group me-2">
+                                                                <a href="#" data-url="https://demo.rajodiya.com/erpgo-saas/test-mail"
+                                                                    data-title="Send Test Mail" class="btn btn-primary send_email ">
+                                                                    Send Test Mail
+                                                                </a>
+                                                            </div>
+                
+                
+                                                            <div class="form-group">
+                                                                <input class="btn btn-primary" type="submit" value="Save Changes">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                
+                                                </form>
+                                            </div>
+                                        
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- second main tab start -->
+                                <div class="tab-pane fade" id="v-pills-LeadStages" role="tabpanel"
+                                    aria-labelledby="v-pills-LeadStages-tab">
+                                    
+                                     <div id="system-settings" class="card">
+                                                <div class="card-header">
+                                                    <h5>System Settings</h5>
+                                                    <small class="text-muted">Edit your system details</small>
+                                                </div>
+                
+                                                <form method="POST" action="https://demo.rajodiya.com/erpgo-saas/system-settings"
+                                                    accept-charset="UTF-8"><input name="_token" type="hidden"
+                                                        value="eixtowaeVhBFdLy8lCzC44AL071VmjFbvdMvDf8M">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="site_currency" class="form-label">Currency *</label>
+                                                                <input class="form-control font-style" name="site_currency" type="text"
+                                                                    value="USD" id="site_currency">
+                                                                <small> Note: Add currency code as per three-letter ISO code.<br>
+                                                                    <a href="https://stripe.com/docs/currencies" target="_blank">You can
+                                                                        find out how to do that here.</a></small> <br>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="site_currency_symbol" class="form-label">Currency Symbol
+                                                                    *</label>
+                                                                <input class="form-control" name="site_currency_symbol" type="text"
+                                                                    value="$" id="site_currency_symbol">
+                                                            </div>
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label class="form-label" for="example3cols3Input">Currency Symbol
+                                                                    Position</label>
+                                                                <div class="row ms-1">
+                                                                    <div class="form-check col-md-6">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="site_currency_symbol_position" value="pre" checked
+                                                                            id="flexCheckDefault">
+                                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                                            Pre
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check col-md-6">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="site_currency_symbol_position" value="post"
+                                                                            id="flexCheckChecked">
+                                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                                            Post
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="decimal_number" class="form-label">Decimal Number
+                                                                    Format</label>
+                                                                <input class="form-control" name="decimal_number" type="number"
+                                                                    value="2" id="decimal_number">
+                                                            </div>
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label for="site_date_format" class="form-label">Date Format</label>
+                                                                <select type="text" name="site_date_format"
+                                                                    class="form-control selectric" id="site_date_format">
+                                                                    <option value="M j, Y">Jan 1,2015</option>
+                                                                    <option value="d-m-Y" selected="selected">dd-mm-yyyy</option>
+                                                                    <option value="m-d-Y">mm-dd-yyyy</option>
+                                                                    <option value="Y-m-d">yyyy-mm-dd</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="site_time_format" class="form-label">Time Format</label>
+                                                                <select type="text" name="site_time_format"
+                                                                    class="form-control selectric" id="site_time_format">
+                                                                    <option value="g:i A">10:30 PM</option>
+                                                                    <option value="g:i a">10:30 pm</option>
+                                                                    <option value="H:i" selected="selected">22:30</option>
+                                                                </select>
+                                                            </div>
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label for="customer_prefix" class="form-label">Customer Prefix</label>
+                                                                <input class="form-control" name="customer_prefix" type="text"
+                                                                    value="#CUST" id="customer_prefix">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="vender_prefix" class="form-label">Vendor Prefix</label>
+                                                                <input class="form-control" name="vender_prefix" type="text"
+                                                                    value="#VEND" id="vender_prefix">
+                                                            </div>
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label for="proposal_prefix" class="form-label">Proposal Prefix</label>
+                                                                <input class="form-control" name="proposal_prefix" type="text"
+                                                                    value="#PROP" id="proposal_prefix">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="invoice_prefix" class="form-label">Invoice Prefix</label>
+                                                                <input class="form-control" name="invoice_prefix" type="text"
+                                                                    value="#INVO" id="invoice_prefix">
+                                                            </div>
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label for="bill_prefix" class="form-label">Bill Prefix</label>
+                                                                <input class="form-control" name="bill_prefix" type="text" value="#BILL"
+                                                                    id="bill_prefix">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="purchase_prefix" class="form-label">Purchase Prefix</label>
+                                                                <input class="form-control" name="purchase_prefix" type="text"
+                                                                    value="#PUR" id="purchase_prefix">
+                                                            </div>
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label for="pos_prefix" class="form-label">Pos Prefix</label>
+                                                                <input class="form-control" name="pos_prefix" type="text" value="#POS"
+                                                                    id="pos_prefix">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="journal_prefix" class="form-label">Journal Prefix</label>
+                                                                <input class="form-control" name="journal_prefix" type="text"
+                                                                    value="#JUR" id="journal_prefix">
+                                                            </div>
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label for="expense_prefix" class="form-label">Expense Prefix</label>
+                                                                <input class="form-control" name="expense_prefix" type="text"
+                                                                    value="#EXP" id="expense_prefix">
+                                                            </div>
+                
+                
+                                                            <div class="form-group col-md-6">
+                                                                <label for="shipping_display" class="form-label">Display Shipping in
+                                                                    Proposal / Invoice / Bill</label>
+                                                                <div class=" form-switch form-switch-left">
+                                                                    <input type="checkbox" class="form-check-input"
+                                                                        name="shipping_display" id="email_tempalte_13" checked>
+                                                                    <label class="form-check-label" for="email_tempalte_13"></label>
+                                                                </div>
+                                                            </div>
+                                                            <!-- <div class="form-group col-md-12">
+                                                                <label for="footer_title"
+                                                                    class="form-label">Proposal/Invoice/Bill/Purchase/POS Footer
+                                                                    Title</label>
+                                                                <input class="form-control" name="footer_title" type="text"
+                                                                    value="Payment Terms And Conditions" id="footer_title">
+                                                            </div> -->
+                                                            <!-- <div class="form-group col-md-12">
+                                                                <label for="footer_notes"
+                                                                    class="form-label">Proposal/Invoice/Bill/Purchase/POS Footer
+                                                                    Note</label>
+                                                                <textarea
+                                                                    class="summernote-simple4 summernote-simple"><span style="color: rgb(29, 28, 29); font-family: Slack-Lato, Slack-Fractions, appleLogo, sans-serif; font-size: 15px; font-variant-ligatures: common-ligatures; background-color: rgb(248, 248, 248);">Customer is eligible for 1% discount if payment is received within 10 days. Full payment is required after 10 days and the overall due date is 30 days from the invoice date.</span></textarea>
+                                                            </div> -->
+                
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-end">
+                                                        <div class="form-group">
+                                                            <input class="btn btn-print-invoice btn-primary m-r-10" type="submit"
+                                                                value="Save Changes">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                
+                                            </div>
+                                       <!-- first inner tab end -->
+                                <!--second main tab end  -->
+
+                                <!-- thired main tab start -->
+                                <div class="tab-pane fade" id="v-pills-DealStages" role="tabpanel"
+                                    aria-labelledby="v-pills-DealStages-tab">
+                                   
+                                 
+                                    
+                                </div>
+
+
+                                <!--thired main tab end  -->
+
+                                <!-- fourth main tab start -->
+
+                                <div class="tab-pane fade" id="v-pills-Sources" role="tabpanel"
+                                    aria-labelledby="v-pills-Sources-tab">
+                                    <div class="row ">
+                                        <div class="shadow p-3  bg-body rounded ">
+
+                                            <div class="row">
+                                                <div class="d-flex justify-content-between ">
+                                                    <h3 style="font-weight: normal;">
+                                                        <select class="form-select" aria-label="Default select example"
+                                                            style="height: 6vh;width: 6vw;">
+                                                            <option selected>10</option>
+                                                            <option value="1">5</option>
+                                                            <option value="2">10</option>
+                                                            <option value="3">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="3">25</option>
+                                                            <option value="3">30</option>
+                                                        </select>
+
+                                                    </h3>
+                                                    <div class="col-lg-7 mt-2">entries per page</div>
+                                                    <div class="mb-3">
+                                                        <input type="search" class="form-control float-end"
+                                                            placeholder="Search" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row table-responsive ">
+
+                                                <table class="table">
+                                                    <thead>
+                                                            <th scope="col" class="text-center">SOURCE</th>
+                                                            <th scope="col" class="text-center">ACTION</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center p-3"> Websites </td>
+                                                            <td class="text-center p-3">
+                                                                <i class="fa-solid fa-trash fa-xl"
+                                                                    style="color: #dc0909;"></i>
+                                                                <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                    style="color: #0ec4dd;"></i>
+                                                            </td>
+                                                            <hr>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center p-3"> Facebook </td>
+                                                            <td class="text-center p-3">
+                                                                <i class="fa-solid fa-trash fa-xl"
+                                                                    style="color: #dc0909;"></i>
+                                                                <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                    style="color: #0ec4dd;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center p-3"> Naukari.com </td>
+                                                            <td class="text-center p-3">
+                                                                <i class="fa-solid fa-trash fa-xl"
+                                                                    style="color: #dc0909;"></i>
+                                                                <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                    style="color: #0ec4dd;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center p-3"> Phone </td>
+                                                            <td class="text-center p-3">
+                                                                <i class="fa-solid fa-trash fa-xl"
+                                                                    style="color: #dc0909;"></i>
+                                                                <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                    style="color: #0ec4dd;"></i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center p-3"> LinkedIn</td>
+                                                            <td class="text-center p-3">
+                                                                <i class="fa-solid fa-trash fa-xl"
+                                                                    style="color: #dc0909;"></i>
+                                                                <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                    style="color: #0ec4dd;"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane fade" id="v-pills-Labels" role="tabpanel"
+                                    aria-labelledby="v-pills-Labels-tab">
+                                    <div class="col-lg-12 card " style="width: 790px; height: 60px; border: 0;">
+                                        <ul class="nav nav-pills mb-3 mx-auto mt-2" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation" style="width: 370px;">
+                                                <button class="nav-link active" id="pills-home2-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-home2" type="button"
+                                                    role="tab" aria-controls="pills-home2" aria-selected="true"
+                                                    style="width: 370px;">
+                                                    SALES
+                                                </button>
+                                            </li>
+                                            <li class="nav-item" role="presentation" style="width: 370px;">
+                                                <button class="nav-link" id="pills-profile2-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-profile2" type="button" role="tab"
+                                                    aria-controls="pills-profile2" aria-selected="false"
+                                                    style="width: 370px;">
+                                                    MARKETING
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home2" role="tabpanel"
+                                            aria-labelledby="pills-home2-tab">
+                                            <div class="row">
+                                                <div class="shadow p-3 mb-5 bg-body rounded">
+                                                    <div class="row table-responsive ">
+                                                        <table class="table ">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-center "> On Hold </td>
+                                                                    <td class="text-center">
+                                                                        <i class="fa-solid fa-trash fa-xl"
+                                                                            style="color: #dc0909;"></i>
+                                                                        <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                            style="color: #0ec4dd;"></i>
+                                                                    </td>
+                                                                    <hr>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-center p-3">New </td>
+                                                                    <td class="text-center p-3">
+                                                                        <i class="fa-solid fa-trash fa-xl"
+                                                                            style="color: #dc0909;"></i>
+                                                                        <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                            style="color: #0ec4dd;"></i>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-center p-3">Pending</td>
+                                                                    <td class="text-center p-3">
+                                                                        <i class="fa-solid fa-trash fa-xl"
+                                                                            style="color: #dc0909;"></i>
+                                                                        <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                            style="color: #0ec4dd;"></i>
+                                                                    </td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td class="text-center p-3">Loss</td>
+                                                                    <td class="text-center p-3">
+                                                                        <i class="fa-solid fa-trash fa-xl"
+                                                                            style="color: #dc0909;"></i>
+                                                                        <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                            style="color: #0ec4dd;"></i>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-center p-3">Win</td>
+                                                                    <td class="text-center p-3">
+                                                                        <i class="fa-solid fa-trash fa-xl"
+                                                                            style="color: #dc0909;"></i>
+                                                                        <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                            style="color: #0ec4dd;"></i>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="pills-profile2" role="tabpanel"
+                                            aria-labelledby="pills-profile2-tab">
+                                            <div class="row ">
+                                                <div class="shadow p-3 mb-5  bg-body rounded p-">
+                                                    <div class="row table-responsive ">
+                                                        <table class="table">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="text-center"> On Hold </td>
+                                                                    <td class="text-center">
+                                                                        <i class="fa-solid fa-trash fa-xl"
+                                                                            style="color: #dc0909;"></i>
+                                                                        <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                            style="color: #0ec4dd;"></i>
+                                                                    </td>
+                                                                    <hr>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="text-center p-3">New </td>
+                                                                    <td class="text-center p-3">
+                                                                        <i class="fa-solid fa-trash fa-xl"
+                                                                            style="color: #dc0909;"></i>
+                                                                        <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                            style="color: #0ec4dd;"></i>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fourth main tab end -->
+                                <div class="tab-pane fade" id="v-pills-ContractType" role="tabpanel"
+                                    aria-labelledby="v-pills-ContractType-tab">
+                                    <div class="row ">
+                                        <div class="shadow p-3 bg-body rounded">
+
+                                            <div class="row ">
+                                                <div class="d-flex justify-content-between ">
+                                                    <h3 style="font-weight: normal;">
+                                                        <select class="form-select" aria-label="Default select example"
+                                                            style="height: 6vh;width: 6vw;">
+                                                            <option selected>10</option>
+                                                            <option value="1">5</option>
+                                                            <option value="2">10</option>
+                                                            <option value="3">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="3">25</option>
+                                                            <option value="3">30</option>
+                                                        </select>
+
+                                                    </h3>
+                                                    <div class="col-lg-7 mt-2">entries per page</div>
+                                                    <div class="mb-3">
+                                                        <input type="search" class="form-control float-end"
+                                                            placeholder="Search" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row table-responsive ">
+
+                                                <table class="table">
+                                                    <thead>
+                                                            <th  class="text-center">NAME</th>
+                                                            <th  class="text-center">ACTION</th>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center p-3"> Marketing </td>
+                                                            <td class="text-center p-3">
+                                                                <i class="fa-solid fa-trash fa-xl"
+                                                                    style="color: #dc0909;"></i>
+                                                                <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                    style="color: #0ec4dd;"></i>
+                                                            </td>
+                                                            <hr>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center p-3"> Planning </td>
+                                                            <td class="text-center p-3">
+                                                                <i class="fa-solid fa-trash fa-xl"
+                                                                    style="color: #dc0909;"></i>
+                                                                <i class="fa-solid fa-pen-to-square fa-xl"
+                                                                    style="color: #0ec4dd;"></i>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5th main tab end -->
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        
+        
+        <!-- demo -->
+
+
+
+        <!--end page wrapper -->
+        <!--start overlay-->
+        <div class="overlay toggle-icon"></div>
+        <!--end overlay-->
+        <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i
+                class='bx bxs-up-arrow-alt'></i></a>
+        <!--End Back To Top Button-->
+
+    </div>
+    <!--end wrapper-->
+    <!--start switcher-->
+
+    <!--end switcher-->
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--plugins-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <!--app JS-->
+    <script src="assets/js/app.js"></script>
+</body>
+
+<!-- Mirrored from codervent.com/amdash/demo/vertical/component-alerts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Dec 2022 02:54:00 GMT -->
+
+</html>

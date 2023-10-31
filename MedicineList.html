@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="en" class="semi-dark">
+
+
+<!-- Mirrored from codervent.com/amdash/demo/vertical/map-google-maps.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Dec 2022 02:54:58 GMT -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+    <!--plugins-->
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+    <!-- loader-->
+    <link href="assets/css/pace.min.css" rel="stylesheet" />
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <!-- Theme Style CSS -->
+    <link rel="stylesheet" href="assets/css/dark-theme.css" />
+    <link rel="stylesheet" href="assets/css/semi-dark.css" />
+    <link rel="stylesheet" href="assets/css/header-colors.css" />
+    <title>Amdash - Bootstrap 5 Admin Dashboard Template</title>
+
+    <!-- icon cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--wrapper-->
+    <div class="wrapper">
+        <!--sidebar wrapper -->
+        <div class="sidebar-wrapper" data-simplebar="true">
+            <div class="sidebar-header">
+                <div>
+					<img src="./assets/images/EHS_logo.png" alt="" class="m-2 img-fluid text-center">
+					
+					
+				</div>
+                <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+                </div>
+            </div>
+            <!--navigation-->
+          
+            <ul class="metismenu" id="menu">
+				<li>
+					<a href="index.html" class="">
+						<div class="parent-icon">
+							<i class='bx bx-home-circle'></i>
+						</div>
+						<div class="menu-title">Dashboard</div>
+					</a>
+					<ul>
+
+					</ul>
+				</li>
+
+				<!-- DOCTOR -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon">
+							<i class="fa-solid fa-user-doctor"></i>
+						</div>
+						<div class="menu-title">Doctors</div>
+					</a>
+					<ul>
+						<li> <a href="All_Doctors.html"><i class="bx bx-right-arrow-alt"></i> All Doctors </a>
+						</li>
+						<li> <a href="Doctor_Registration.html"><i class="bx bx-right-arrow-alt"></i> Doctor
+								Registration </a>
+						</li>
+						<li> <a href="Add_Doctor.html"><i class="bx bx-right-arrow-alt"></i> Add Doctor </a>
+						</li>
+					    
+						<li> <a href="DoctorProfile.html"><i class="bx bx-right-arrow-alt"></i> Doctor Profile </a>
+						</li>
+
+					</ul>
+				</li>
+
+				<!-- Patient -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="fa-solid fa-hospital-user"></i>
+						</div>
+						<div class="menu-title"> Patient </div>
+					</a>
+					<ul>
+						<li> <a href="Patients-contact-list.html"><i class="bx bx-right-arrow-alt"></i>
+								All Patients
+							</a>
+						</li>
+						<li> <a href="Registration.html"><i class="bx bx-right-arrow-alt"></i>
+								Patients Registration
+							</a>
+						</li>
+						<li> <a href="user-profile.html"><i class="bx bx-right-arrow-alt"></i>
+								Patients Profile
+							</a>
+						</li>
+						<li> <a href="Add-Appointment.html"><i class="bx bx-right-arrow-alt"></i>
+								Add Appointment
+							</a>
+						</li>
+
+						
+						<li> <a href="TriageInfo.html"><i class="bx bx-right-arrow-alt"></i>
+								Patients Triage Details
+							</a>
+						</li>
+						<li> <a href="Discharge.html"><i class="bx bx-right-arrow-alt"></i>
+								Discharge Patients
+							</a>
+						</li>
+						<li> <a href="Payments.html"><i class="bx bx-right-arrow-alt"></i>
+								Payment
+							</a>
+						</li>
+
+					</ul>
+				</li>
+
+
+				<!-- Schedule  -->
+
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-calendar-days"></i>
+						</div>
+						<div class="menu-title">Schedule </div>
+					</a>
+					<ul>
+						<li> <a href="AllSchedule.html"><i class="bx bx-right-arrow-alt"></i> All Schedule </a>
+						</li>
+						<li> <a href="Holidays.html"><i class="bx bx-right-arrow-alt"></i> Holidays </a>
+						</li>
+
+					</ul>
+				</li>
+
+				<!-- Appointment  -->
+
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-calendar-check"></i>
+						</div>
+						<div class="menu-title">Appointment </div>
+					</a>
+					<ul>
+						<li> <a href="All-Appointment.html"><i class="bx bx-right-arrow-alt"></i> All Appointment </a>
+						</li>
+						<li> <a href="add_new_payment.html"><i class="bx bx-right-arrow-alt"></i> Add Appointment
+							</a>
+						</li>
+						<li> <a href="Todays.html"><i class="bx bx-right-arrow-alt"></i> Todays</a>
+						</li>
+						<li> <a href="Upcoimg.html"><i class="bx bx-right-arrow-alt"></i> Upcoming</a>
+						</li>
+						<li> <a href="Calender.html"><i class="bx bx-right-arrow-alt"></i> Calender </a>
+						</li>
+						<li> <a href="Request.html"><i class="bx bx-right-arrow-alt"></i> Request </a>
+						</li>
+
+					</ul>
+				</li>
+
+				<!-- Human Resoures -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"> <i class="fa-brands fa-osi"></i>
+						</div>
+						<div class="menu-title"> Human Resoures </div>
+					</a>
+					<ul>
+						<li> <a href="NurseHuman.html"><i class="bx bx-right-arrow-alt"></i>Nurse </a>
+						</li>
+						<li> <a href="Pharmastichuman.html"><i class="bx bx-right-arrow-alt"></i> Pharmacist </a>
+						</li>
+						<li> <a href="AccountantHuman.html"><i class="bx bx-right-arrow-alt"></i> Accountant </a>
+						</li>
+						<li> <a href="LaboratoristHuman.html"><i class="bx bx-right-arrow-alt"></i> Laboratorist </a>
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- Contact -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="fa-regular fa-address-book"></i>
+						</div>
+						<div class="menu-title">Contact </div>
+					</a>
+					<ul>
+						<li> <a href="app-emailbox.html"><i class="bx bx-right-arrow-alt"></i>Email</a>
+						</li>
+						<li> <a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
+						</li>
+
+						<li> <a href="app-contact-list.html"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
+						</li>
+
+						<li> <a href="app-invoice.html"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
+						</li>
+					</ul>
+				</li>
+
+				<!-- CRM  -->
+				<!-- <li>
+					<a class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
+						</div>
+						<div class="menu-title">CRM </div>
+					</a>
+					<ul>
+						<li> <a href=""><i class="bx bx-right-arrow-alt"></i> Overview </a>
+						</li>
+					     <li>
+							<a class="has-arrow">
+								<div class="parent-icon"> <i class='bx bx-bookmark-heart'></i>
+								</div>
+								<div class="menu-title"> Report </div>
+							</a>
+							<ul>
+								<li> <a href=""><i class="bx bx-right-arrow-alt"></i> Lead </a>
+								</li>
+								<li> <a href=""><i class="bx bx-right-arrow-alt"></i> Lead </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li> -->
+
+				<!-- CRM -->
+				<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class="fa-brands fa-delicious"></i>
+						</div>
+						<div class="menu-title">CRM</div>
+					</a>
+					<ul>
+						<li> <a href="CRM_overview.html"><i class="bx bx-right-arrow-alt"></i>Overview</a>
+						</li>
+					     <li>  <a href="javascript:;" class="has-arrow">
+								<i class="bx bx-right-arrow-alt"></i>
+								<div class="menu-title ">Report</div>
+							</a>
+							<ul>
+                                   <li>
+								<a href="CRM_Report_lead.html"><i class="bx bx-right-arrow-alt"></i>Lead</a>
+							</li>
+							<li>
+								<a href="CRM_Report_deal.html"><i class="bx bx-right-arrow-alt"></i>Deal</a>
+							</li>
+							</ul>
+							
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- CRM System  -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-brands fa-centos"></i>
+						</div>
+						<div class="menu-title">CRM System </div>
+					</a>
+					<ul>
+						<li> <a href="Lead.html"><i class="bx bx-right-arrow-alt"></i> Lead </a>
+						</li>
+						<li> <a href="Crmdeals.html"><i class="bx bx-right-arrow-alt"></i> Deals </a>
+						</li>
+						<li> <a href="CRM_Builder.html"><i class="bx bx-right-arrow-alt"></i> Form Builder </a>
+						</li>
+						<li> <a href="CRM_contract.html"><i class="bx bx-right-arrow-alt"></i> Contract </a>
+						</li>
+						<li> <a href="CRMsetup.html"><i class="bx bx-right-arrow-alt"></i> CRM System Setup </a>
+						</li>
+						<!-- <li> <a href="Barcode.html"><i class="bx bx-right-arrow-alt"></i> Barcode </a>
+						</li> -->
+						<!-- <li> <a href="Add_product.html"><i class="bx bx-right-arrow-alt"></i> Product </a>
+						</li> -->
+					</ul>
+				</li>
+
+				 <!-- <li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
+						</div>
+						<div class="menu-title">POS System </div>
+					</a>
+					<ul>
+						<li> <a href="Barcode.html"><i class="bx bx-right-arrow-alt"></i> Barcode </a>
+						</li>
+						<li> <a href="Add_product.html"><i class="bx bx-right-arrow-alt"></i> Add Product </a>
+						</li>
+						<li> <a href="Add_product.html"><i class="bx bx-right-arrow-alt"></i> POS Sty </a>
+						</li>
+
+					</ul>
+
+
+				</li> --> 
+
+				<!-- Lab tests -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-flask"></i>
+						</div>
+						<div class="menu-title"> Lab tests </div>
+					</a>
+					<ul>
+						<li> <a href="labTest.html"><i class="bx bx-right-arrow-alt"></i> Lab Tests </a>
+						</li>
+						<li> <a href="LabReports.html"><i class="bx bx-right-arrow-alt"></i> Lab Report </a>
+						</li>
+						<li> <a href="Lab-reportdelivery.html"><i class="bx bx-right-arrow-alt"></i>Report Delivery
+							</a>
+						</li>
+						<li> <a href="lab-template.html"><i class="bx bx-right-arrow-alt"></i>Template
+							</a>
+						</li>
+						<li> <a href="LabMacro.html"><i class="bx bx-right-arrow-alt"></i>Macro
+							</a>
+						</li>
+					</ul>
+				</li>
+
+
+				<!-- Bed  -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon">
+							<i class="fa-solid fa-bed"></i>
+
+						</div>
+						<div class="menu-title">Bed </div>
+					</a>
+					<ul>
+						<li> <a href="Bed_all_addmission.html"><i class="bx bx-right-arrow-alt"></i>All Beds </a>
+						</li>
+						<li> <a href="bed_new_Addmission.html"><i class="bx bx-right-arrow-alt"></i> Add Admission </a>
+						</li>
+						<li> <a href="bed-list.html"><i class="bx bx-right-arrow-alt"></i> Bed list </a>
+						</li>
+						<li> <a href="new-bed.html"><i class="bx bx-right-arrow-alt"></i> Add bed </a>
+						</li>
+						<li> <a href="bed-category.html"><i class="bx bx-right-arrow-alt"></i> Bed Category </a>
+						</li>
+					</ul>
+				</li>
+
+
+
+
+				<!-- Medicine -->
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"> <i class="fa-solid fa-pills"></i>
+						</div>
+						<div class="menu-title"> Medicine </div>
+					</a>
+					<ul>
+						<li> <a href="MedicineList.html"><i class="bx bx-right-arrow-alt"></i> Medicine List </a>
+						</li>
+						<li> <a href="AddMedicine.html"><i class="bx bx-right-arrow-alt"></i> Add Medicine </a>
+						</li>
+						<li> <a href="MedicineCategory.html"><i class="bx bx-right-arrow-alt"></i>Medicine Category </a>
+						</li>
+						<li> <a href="Addcategory.html"><i class="bx bx-right-arrow-alt"></i>Add Category </a>
+						</li>
+						<li> <a href="MedicineAlertStocklist.html"><i class="bx bx-right-arrow-alt"></i>Medicine Stock
+								Alert </a>
+						</li>
+					</ul>
+				</li>
+
+
+
+
+				<li class="menu-label">Pages</li>
+				<li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="fa-regular fa-file"></i>
+						</div>
+						<div class="menu-title">Authentication</div>
+					</a>
+					<ul>
+						<li> <a href="authentication-signin.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign In</a>
+						</li>
+						<li> <a href="authentication-signup.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign Up</a>
+						</li>
+						<li> <a href="authentication-signin-with-header-footer.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign In with Header & Footer</a>
+						</li>
+						<li> <a href="authentication-signup-with-header-footer.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Sign Up with Header & Footer</a>
+						</li>
+						<li> <a href="authentication-forgot-password.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Forgot Password</a>
+						</li>
+						<li> <a href="authentication-reset-password.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Reset Password</a>
+						</li>
+						<li> <a href="authentication-lock-screen.html" target="_blank"><i
+									class="bx bx-right-arrow-alt"></i>Lock Screen</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="user-profile.html">
+						<div class="parent-icon"><i class="fa-regular fa-user"></i>
+						</div>
+						<div class="menu-title">User Profile</div>
+					</a>
+				</li>
+
+			
+				<!-- <li>
+					<a href="faq.html">
+						<div class="parent-icon"><i class="bx bx-help-circle"></i>
+						</div>
+						<div class="menu-title">FAQ</div>
+					</a>
+				</li> -->
+				<!-- <li>
+					<a href="pricing-table.html">
+						<div class="parent-icon"><i class="bx bx-diamond"></i>
+						</div>
+						<div class="menu-title">Pricing</div>
+					</a>
+				</li> -->
+
+				<!-- <li>
+					<a class="has-arrow" href="javascript:;">
+						<div class="parent-icon"><i class="bx bx-map-alt"></i>
+						</div>
+						<div class="menu-title">Maps</div>
+					</a>
+					<ul>
+						<li> <a href="map-google-maps.html"><i class="bx bx-right-arrow-alt"></i>Google Maps</a>
+						</li>
+						<li> <a href="map-vector-maps.html"><i class="bx bx-right-arrow-alt"></i>Vector Maps</a>
+						</li>
+					</ul>
+				</li> -->
+				<li class="menu-label">Others</li>
+				
+                
+				<li>
+					<a href="javascript:;">
+						<div class="parent-icon"><i class="fa-solid fa-book"></i>
+						</div>
+						<div class="menu-title">Documentation</div>
+					</a>
+				</li>
+				<li>
+					<a href="https://themeforest.net/user/codervent" target="_blank">
+						<div class="parent-icon"><i class="fa-solid fa-circle-info"></i>
+						</div>
+						<div class="menu-title">Support</div>
+					</a>
+				</li>
+
+				<li>
+					<a href="Setting.html">
+						<div class="parent-icon"><i class="fa-solid fa-gear"></i>
+						</div>
+						<div class="menu-title">Setting</div>
+					</a>
+				</li>
+			</ul>
+            <!-- <ul class="metismenu" id="menu">
+                <li>
+                    <a href="index2.html">
+                        <div class="parent-icon mt-4"><i class='bx bx-home-circle'></i>
+                        </div>
+                        <div class="menu-title mt-4">Dashboard</div>
+                    </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="timeline.html">
+                        <div class="parent-icon"><i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div class="menu-title">All Appoinments</div>
+                    </a>
+                </li>
+
+                <li>
+
+                    <a href="form.html">
+                        <div class="parent-icon"><i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div class="menu-title">Add Appointments</div>
+
+
+                    </a>
+                </li>
+
+                <li>
+
+                    <a href="Patients_registration.html">
+                        <div class="parent-icon"><i class="fa-regular fa-address-card"></i>
+                        </div>
+                        <div class="menu-title">Todays</div>
+                    </a>
+                </li>
+
+
+                <li>
+
+                    <a href="user-profile.html">
+                        <div class="parent-icon"><i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div class="menu-title">Upcoming</div>
+                    </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="calender.html">
+                        <div class="parent-icon"> <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <div class="menu-title">Calender
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="has-arrow" href="javascript:;">
+                        <div class=""><i class="fa-solid fa-eject"></i>
+                        </div>
+                        <div class="menu-title">Request</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="has-arrow" href="javascript:;">
+                        <div class="parent-icon"><i class="fa-regular fa-credit-card"></i>
+                        </div>
+                        <div class="menu-title">Payment</div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a class="has-arrow" href="javascript:;">
+                        <div class="parent-icon"><i class="bx bx-lock"></i>
+                        </div>
+                        <div class="menu-title">Profile</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="user-profile.html">
+                        <div class="parent-icon"><i class="bx bx-user-circle"></i>
+                        </div>
+                        <div class="menu-title">Setting</div>
+                    </a>
+                </li>
+
+            </ul> -->
+            <!--end navigation-->
+        </div>
+        <!--end sidebar wrapper -->
+        <!--start header -->
+        <header>
+            <div class="topbar d-flex align-items-center">
+                <nav class="navbar navbar-expand">
+                    <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                    </div>
+                    <div class="search-bar flex-grow-1">
+                        <div class="position-relative search-bar-box">
+                            <input type="text" class="form-control search-control" placeholder="Type to search...">
+                            <span class="position-absolute top-50 search-show translate-middle-y"><i
+                                    class='bx bx-search'></i></span>
+                            <span class="position-absolute top-50 search-close translate-middle-y"><i
+                                    class='bx bx-x'></i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="user-box dropdown">
+                        <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/avatars/avatar-2.png" class="user-img" alt="user avatar">
+                            <div class="user-info ps-3">
+                                <p class="user-name mb-0">Pauline Seitz</p>
+                                <p class="designattion mb-0">Admin</p>
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-user"></i><span>Profile</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class="bx bx-cog"></i><span>Settings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-home-circle'></i><span>Dashboard</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-dollar-circle'></i><span>Earnings</span></a>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-download'></i><span>Downloads</span></a>
+                            </li>
+                            <li>
+                                <div class="dropdown-divider mb-0"></div>
+                            </li>
+                            <li><a class="dropdown-item" href="javascript:;"><i
+                                        class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--end header -->
+        <!--start page wrapper -->
+        <div class="page-wrapper">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3>Medicine</h3>
+                    </div>
+                </div>
+
+                <div class="container shadow p-3 mb-5 bg-body rounded mt-3">
+                    <div class="parentdivstyle">
+                        <div class="align-right-style">
+                            <h6>List Of All The Medicine
+
+                            </h6>
+                        </div>
+                        <div>
+                                      <!-- Button trigger modal -->
+                        <button type="button" class=" Create_Hospital rounded  text-white border-0 p-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" style="background-color:green ; ">
+                        <i class="fa-solid fa-plus p-1 "
+                            style="color: green; background-color: #fff; border-radius: 30%;"></i>
+                        Add Medicine
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Add Medicine</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                
+                                
+                                <div class="modal-body">
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Id</label>
+                                                <input type="text" class="form-control" id="">
+                                            
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                            <label for="exampleInputPassword1"
+                                                class="form-label">Name</label>
+                                            <input type="text" class="form-control" id="">
+                                        
+                                    </div>
+
+                                        
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Category</label>
+                                                <input type="text" class="form-control" id="">
+                                            
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                            <label for="exampleInputPassword1"
+                                                class="form-label">Store Box</label>
+                                            <input type="text" class="form-control" id="">
+                                        
+                                    </div>
+
+                                        
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Purchase Price</label>
+                                                <input type="text" class="form-control" id="">
+                                            
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                            <label for="exampleInputPassword1"
+                                                class="form-label">Sale Price</label>
+                                            <input type="text" class="form-control" id="">
+                                        
+                                    </div>
+
+                                        
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Quantity</label>
+                                                <input type="text" class="form-control" id="">
+                                            
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                            <label for="exampleInputPassword1"
+                                                class="form-label">Generic Name</label>
+                                            <input type="text" class="form-control" id="">
+                                        
+                                    </div>
+
+                                        
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Company</label>
+                                                <input type="text" class="form-control" id="">
+                                            
+                                        </div>
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                            <label for="exampleInputPassword1"
+                                                class="form-label">Effect</label>
+                                            <input type="text" class="form-control" id="">
+                                        
+                                    </div>
+
+                                        
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-lg-6 mb-3">
+                                            
+                                                <label for="exampleInputPassword1"
+                                                    class="form-label">Expire Date</label>
+                                                <input type="text" class="form-control" id="">
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <!-- <input type="number" value="100" > -->
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example"
+                                style="width: 70px;">
+                                <option selected>100</option>
+                                <option value="1">11</option>
+                                <option value="2">12</option>
+                                <option value="3">13</option>
+                                <option value="4">14</option>
+                                <option value="5">15</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-5">
+
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-light">Copy</button>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-light">Excel</button>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-light">CSV</button>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-light">PDF</button>
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-light">Print</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3">
+
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="row table-responsive">
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Name </th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Store Box</th>
+                                    <th scope="col"> Purchase Price</th>
+                                    <th scope="col"> Sale Price</th>
+                                    <th scope="col"> Quantity</th>
+                                    <th scope="col"> Generic Name </th>
+                                    <th scope="col">Company</th>
+                                    <th scope="col"> Effects</th>
+                                    <th scope="col"> Expire date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Teeth Whitening</td>
+                                    <td> x-ray</td>
+                                    <td>44</td>
+                                    <td>$0</td>
+                                    <td>$0</td>
+                                    <td>Stock Out <br>
+                                        <button type="button" class="btn btn-success mt-3">
+                                            Load
+                                        </button>
+                                    </td>
+                                    <td>Teeth Whitening</td>
+                                    <td>Teeth Whitening</td>
+                                    <td>No effect</td>
+                                    <td>29-06-2024</td>
+                                    <!-- <td><button type="button" class="btn btn-info btn-sm btn_width editbutton" data-toggle="modal" data-id="23"><i class="fa fa-edit"></i> Edit</button>
+                                <a class="btn btn-danger btn-sm btn_width delete_button" onclick="return confirm('Are you sure you want to delete this item?');"><i class="fa fa-trash"> </i> Delete</a></i>
+                            </td> -->
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Teeth Whitening</td>
+                                    <td> x-ray</td>
+                                    <td>44</td>
+                                    <td>$0</td>
+                                    <td>$0</td>
+                                    <td>Stock Out <br>
+                                        <button type="button" class="btn btn-success mt-1">
+                                            Load
+                                        </button>
+                                    </td>
+                                    <td>Teeth Whitening</td>
+                                    <td>Teeth Whitening</td>
+                                    <td>No effect</td>
+                                    <td>29-06-2024</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Teeth Whitening</td>
+                                    <td> x-ray</td>
+                                    <td>44</td>
+                                    <td>$0</td>
+                                    <td>$0</td>
+                                    <td>Stock Out <br>
+                                        <button type="button" class="btn btn-success mt-1">
+                                            Load
+                                        </button>
+                                    </td>
+                                    <td>Teeth Whitening</td>
+                                    <td>Teeth Whitening</td>
+                                    <td>No effect</td>
+                                    <td>29-06-2024</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Teeth Whitening</td>
+                                    <td> x-ray</td>
+                                    <td>44</td>
+                                    <td>$0</td>
+                                    <td>$0</td>
+                                    <td>Stock Out <br>
+                                        <button type="button" class="btn btn-success mt-1">
+                                            Load
+                                        </button>
+                                    </td>
+                                    <td>Teeth Whitening</td>
+                                    <td>Teeth Whitening</td>
+                                    <td>No effect</td>
+                                    <td>29-06-2024</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Teeth Whitening</td>
+                                    <td> x-ray</td>
+                                    <td>44</td>
+                                    <td>$0</td>
+                                    <td>$0</td>
+                                    <td>Stock Out <br>
+                                        <button type="button" class="btn btn-success mt-1">
+                                            Load
+                                        </button>
+                                    </td>
+                                    <td>Teeth Whitening</td>
+                                    <td>Teeth Whitening</td>
+                                    <td>No effect</td>
+                                    <td>29-06-2024</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Teeth Whitening</td>
+                                    <td> x-ray</td>
+                                    <td>44</td>
+                                    <td>$0</td>
+                                    <td>$0</td>
+                                    <td>Stock Out <br>
+                                        <button type="button" class="btn btn-success mt-1">
+                                            Load
+                                        </button>
+                                    </td>
+                                    <td>Teeth Whitening</td>
+                                    <td>Teeth Whitening</td>
+                                    <td>No effect</td>
+                                    <td>29-06-2024</td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--end page wrapper -->
+    <!--start overlay-->
+    <div class="overlay toggle-icon"></div>
+    <!--end overlay-->
+    <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+    </div>
+    <!--end wrapper-->
+    <!--start switcher-->
+    <div class="switcher-wrapper">
+        <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+        </div>
+        <div class="switcher-body">
+            <div class="d-flex align-items-center">
+                <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+                <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+            </div>
+            <hr />
+            <h6 class="mb-0">Theme Styles</h6>
+            <hr />
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode">
+                    <label class="form-check-label" for="lightmode">Light</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
+                    <label class="form-check-label" for="darkmode">Dark</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark" checked>
+                    <label class="form-check-label" for="semidark">Semi Dark</label>
+                </div>
+            </div>
+            <hr />
+            <div class="form-check">
+                <input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
+                <label class="form-check-label" for="minimaltheme">Minimal Theme</label>
+            </div>
+            <hr />
+            <h6 class="mb-0">Header Colors</h6>
+            <hr />
+            <div class="header-colors-indigators">
+                <div class="row row-cols-auto g-3">
+                    <div class="col">
+                        <div class="indigator headercolor1" id="headercolor1"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor2" id="headercolor2"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor3" id="headercolor3"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor4" id="headercolor4"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor5" id="headercolor5"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor6" id="headercolor6"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor7" id="headercolor7"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator headercolor8" id="headercolor8"></div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <h6 class="mb-0">Sidebar Colors</h6>
+            <hr />
+            <div class="header-colors-indigators">
+                <div class="row row-cols-auto g-3">
+                    <div class="col">
+                        <div class="indigator sidebarcolor1" id="sidebarcolor1"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator sidebarcolor2" id="sidebarcolor2"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator sidebarcolor3" id="sidebarcolor3"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator sidebarcolor4" id="sidebarcolor4"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator sidebarcolor5" id="sidebarcolor5"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator sidebarcolor6" id="sidebarcolor6"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator sidebarcolor7" id="sidebarcolor7"></div>
+                    </div>
+                    <div class="col">
+                        <div class="indigator sidebarcolor8" id="sidebarcolor8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end switcher-->
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--plugins-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+    <script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <!-- google maps api -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKXKdHQdtqgPVl2HI2RnUa_1bjCxRCQo4&amp;callback=initMap"
+        async defer></script>
+    <script src="assets/plugins/gmaps/map-custom-script.js"></script>
+    <!--app JS-->
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from codervent.com/amdash/demo/vertical/map-google-maps.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Dec 2022 02:54:59 GMT -->
+
+</html>
+
+<style>
+    .align-right-style {
+        text-align: left;
+    }
+
+    .align-left-style {
+        text-align: right;
+
+    }
+
+    .parentdivstyle {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
